@@ -44,3 +44,10 @@
   }
 }
 
+/* 当视口宽度小于等于 768px 时应用这些样式 */
+@media (max-width: 768px) {
+  /* 适用于移动设备的样式 */
+  .slots {
+    flex-direction: column;
+  }
+}
