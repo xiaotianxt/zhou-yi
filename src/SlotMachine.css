@@ -13,34 +13,10 @@
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #61dafb;
-  color: #282c34;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-button:hover {
-  background-color: #41a7e8;
-}
 
 @media (prefers-color-scheme: light) {
   .SlotMachine {
     background-color: #f0f0f0;
-  }
-
-  button {
-    background-color: #282c34;
-    color: #f0f0f0;
-  }
-
-  button:hover {
-    background-color: #1a1a1a;
   }
 }
 
@@ -55,8 +31,4 @@ button:hover {
 .buttons {
   display: flex;
   gap: 1rem;
-}
-
-button.mode-button {
-  background-color: #fca311;
 }
