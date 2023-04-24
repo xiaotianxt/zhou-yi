@@ -13,7 +13,7 @@
   margin-bottom: 20px;
 }
 
-.spin-button {
+button {
   background-color: #61dafb;
   color: #282c34;
   font-size: 18px;
@@ -25,7 +25,7 @@
   transition: background-color 0.2s;
 }
 
-.spin-button:hover {
+button:hover {
   background-color: #41a7e8;
 }
 
@@ -34,12 +34,12 @@
     background-color: #f0f0f0;
   }
 
-  .spin-button {
+  button {
     background-color: #282c34;
     color: #f0f0f0;
   }
 
-  .spin-button:hover {
+  button:hover {
     background-color: #1a1a1a;
   }
 }
@@ -50,4 +50,13 @@
   .slots {
     flex-direction: column;
   }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+button.mode-button {
+  background-color: #fca311;
 }
