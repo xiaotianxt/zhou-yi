@@ -85,26 +85,27 @@ function SlotMachine() {
       <div className="info">
         {ignore.map((item, index) => {
           // 如果上一个和这一个的 c1 不一样就加一个换行
-          if (index > 0 && ignore[index - 1].c1 !== item.c1) {
-            return (
-              <>
-                <br />
-                <span key={item.c1 + item.c2 + item.result}>
-                  {item.c1}
-                  {item.c2}
-                  {item.result} &nbsp;
-                </span>
-              </>
-            );
-          } else {
-            return (
-              <span key={item.c1 + item.c2 + item.result}>
+          return (
+            <>
+              {index > 0 && ignore[index - 1].c1 !== item.c1 && <br />}
+              <span
+                key={item.c1 + item.c2 + item.result}
+                className="item"
+                onClick={() => {
+                  setIgnore((cur) => {
+                    const index = cur.findIndex((i) => i === item);
+                    const newCur = [...cur];
+                    newCur.splice(index, 1);
+                    return newCur;
+                  });
+                }}
+              >
                 {item.c1}
                 {item.c2}
                 {item.result} &nbsp;
               </span>
-            );
-          }
+            </>
+          );
         })}
       </div>
     </div>

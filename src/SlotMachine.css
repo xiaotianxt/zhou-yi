@@ -32,3 +32,11 @@
   display: flex;
   gap: 1rem;
 }
+
+.item {
+  display: inline-block;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
