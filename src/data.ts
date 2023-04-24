@@ -1,0 +1,68 @@
+export const icons = ["hello", "world", "next"];
+
+export type CNChar = "天" | "雷" | "火" | "泽" | "地" | "山" | "水" | "风";
+export type RealChar = "乾" | "震" | "离" | "兑" | "坤" | "艮" | "坎" | "巽";
+export type IconChar = "☰" | "☳" | "☲" | "☱" | "☷" | "☶" | "☵" | "☴";
+
+export type Char = CNChar | RealChar | IconChar;
+export type CombinationResult = '姤' | '遯' | '否' | '观' | '剥' | '晋' | '大有' | '节' | '屯' | '既济' | '革' | '丰' | '明夷' | '师' | '贲' | '大畜' | '损' | '睽' | '履' | '中孚' | '渐' | '豫' | '解' | '恒' | '升' | '井' | '大过' | '随' | '小畜' | '家人' | '益' | '无妄' | '噬嗑' | '颐' | '蛊' | '旅' | '鼎' | '未济' | '蒙' | '涣' | '讼' | '同人' | '复' | '临' | '泰' | '大壮' | '夬' | '需' | '比' | '困' | '萃' | '咸' | '蹇' | '谦' | '小过' | '归妹';
+export type Combination = { c1: Char; c2: Char; result: CombinationResult };
+
+export const data: Combination[] = [
+  { c1: "天", c2: "风", result: "姤" },
+  { c1: "天", c2: "山", result: "遯" },
+  { c1: "天", c2: "地", result: "否" },
+  { c1: "风", c2: "地", result: "观" },
+  { c1: "山", c2: "地", result: "剥" },
+  { c1: "火", c2: "地", result: "晋" },
+  { c1: "火", c2: "天", result: "大有" },
+  { c1: "水", c2: "泽", result: "节" },
+  { c1: "水", c2: "雷", result: "屯" },
+  { c1: "水", c2: "火", result: "既济" },
+  { c1: "泽", c2: "火", result: "革" },
+  { c1: "雷", c2: "火", result: "丰" },
+  { c1: "地", c2: "火", result: "明夷" },
+  { c1: "地", c2: "水", result: "师" },
+  { c1: "山", c2: "火", result: "贲" },
+  { c1: "山", c2: "天", result: "大畜" },
+  { c1: "山", c2: "泽", result: "损" },
+  { c1: "火", c2: "泽", result: "睽" },
+  { c1: "天", c2: "泽", result: "履" },
+  { c1: "风", c2: "泽", result: "中孚" },
+  { c1: "风", c2: "山", result: "渐" },
+  { c1: "雷", c2: "地", result: "豫" },
+  { c1: "雷", c2: "水", result: "解" },
+  { c1: "雷", c2: "风", result: "恒" },
+  { c1: "地", c2: "风", result: "升" },
+  { c1: "水", c2: "风", result: "井" },
+  { c1: "泽", c2: "风", result: "大过" },
+  { c1: "泽", c2: "雷", result: "随" },
+  { c1: "风", c2: "天", result: "小畜" },
+  { c1: "风", c2: "火", result: "家人" },
+  { c1: "风", c2: "雷", result: "益" },
+  { c1: "天", c2: "雷", result: "无妄" },
+  { c1: "火", c2: "雷", result: "噬嗑" },
+  { c1: "山", c2: "雷", result: "颐" },
+  { c1: "山", c2: "风", result: "蛊" },
+  { c1: "火", c2: "山", result: "旅" },
+  { c1: "火", c2: "风", result: "鼎" },
+  { c1: "火", c2: "水", result: "未济" },
+  { c1: "山", c2: "水", result: "蒙" },
+  { c1: "风", c2: "水", result: "涣" },
+  { c1: "天", c2: "水", result: "讼" },
+  { c1: "天", c2: "火", result: "同人" },
+  { c1: "地", c2: "雷", result: "复" },
+  { c1: "地", c2: "泽", result: "临" },
+  { c1: "地", c2: "天", result: "泰" },
+  { c1: "雷", c2: "天", result: "大壮" },
+  { c1: "泽", c2: "天", result: "夬" },
+  { c1: "水", c2: "天", result: "需" },
+  { c1: "水", c2: "地", result: "比" },
+  { c1: "泽", c2: "水", result: "困" },
+  { c1: "泽", c2: "地", result: "萃" },
+  { c1: "泽", c2: "山", result: "咸" },
+  { c1: "水", c2: "山", result: "蹇" },
+  { c1: "地", c2: "山", result: "谦" },
+  { c1: "雷", c2: "山", result: "小过" },
+  { c1: "雷", c2: "泽", result: "归妹" },
+];

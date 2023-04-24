@@ -1,0 +1,13 @@
+.Slot {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 3rem;
+}
