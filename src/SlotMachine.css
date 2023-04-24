@@ -28,3 +28,19 @@
 .spin-button:hover {
   background-color: #41a7e8;
 }
+
+@media (prefers-color-scheme: light) {
+  .SlotMachine {
+    background-color: #f0f0f0;
+  }
+
+  .spin-button {
+    background-color: #282c34;
+    color: #f0f0f0;
+  }
+
+  .spin-button:hover {
+    background-color: #1a1a1a;
+  }
+}
+
